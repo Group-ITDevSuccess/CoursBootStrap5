@@ -1,217 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Bootstrap</title>
     <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css" />
-
-    <title>Hello, world!</title>
   </head>
-
+  <style >
+    .header {
+      background-color: rgb(2, 1, 61);
+      color: #fff;
+    }
+    .main-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+   .custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+    }
+  </style>
   <body>
-    <section class="test py-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <form>
-          <div class="row">
-            <div class="col-md-12 mx-auto">
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input
-                  email
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="name@example.com"
-                />
+        <a class="navbar-brand" href="#">TP Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Acceuil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="" class="nav-link">Se Connecter</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="btn btn-success">S'Inscrire</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header text-center p-5">
+      <div class="container">
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          ipsum et beatae excepturi rem a.</span
+        >
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Souscrire
+        </button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog text-dark">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  data-bs-toggle="tooltip" data-bs-placement="right"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Fermer le Pupup"
+                ></button>
               </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="pwd" class="form-label">PassWord</label>
-                <input type="password" class="form-control" id="pwd" />
-              </div>
-              <div class="mb-3">
-                <label for="formFile" class="form-label"
-                  >Default file input example</label
+              <div class="modal-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, animi!</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
                 >
-                <input class="form-control" type="file" id="formFile" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Example textarea</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-            </div>
-            <div class="col-md-12 mx-auto">
-              <div class="mb-3">
-                <label for="select" class="form-label">Faite un Choix</label>
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  id="select"
-                  multiple
-                >
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <div class="mb-3">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckChecked"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
-                  </label>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
-                  </label>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="customRange1" class="form-label"
-                  >Example range</label
-                >
-                <input type="range" class="form-range" id="customRange1" />
-              </div>
-            </div>
-            <div class="col-md-12 mx-auto">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Mot de Passe"
-                  aria-label="PassWord"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Recipient's username"
-                  aria-label="Recipient's username"
-                  aria-describedby="basic-addon2"
-                />
-                <span class="input-group-text" id="basic-addon2"
-                  >@gmail.com</span
-                >
-              </div>
-
-              <label for="basic-url" class="form-label">Your vanity URL</label>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon3"
-                  >https://example.com/users/</span
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="basic-url"
-                  aria-describedby="basic-addon3"
-                />
-              </div>
-
-              <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Amount (to the nearest dollar)"
-                />
-                <span class="input-group-text">.00</span>
-              </div>
-
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
-                />
-                <span class="input-group-text">@</span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Server"
-                  aria-label="Server"
-                />
-              </div>
-
-              <div class="input-group">
-                <span class="input-group-text">With textarea</span>
-                <textarea
-                  class="form-control"
-                  aria-label="With textarea"
-                ></textarea>
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
               </div>
             </div>
           </div>
-        </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-page py-5">
+      <div class="container">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <img src="./assets/img/image.png" class="img-flud" alt="image" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="p-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, nostrum?
+            </h1>
+            <p class="p-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              quisquam incidunt asperiores tempora, soluta animi aspernatur
+              libero odio in eaque illum, harum eos? Vel officiis pariatur
+              maxime culpa reprehenderit atque eum modi, et nulla veritatis hic
+              ullam maiores animi dolor aspernatur dignissimos magnam, harum
+              magni? Pariatur quaerat ea aut eos.
+            </p>
+            <form class="p-5">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Adresse email"
+                  aria-label="Adresse email"
+                  aria-describedby="basic-addon2"
+                />
+                <button class="input-group-text btn btn-primary">
+                  Souscrire
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map((tooltipTriggerEl)=>{
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    </script>
   </body>
 </html>
