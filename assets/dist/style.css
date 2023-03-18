@@ -1,0 +1,60 @@
+.redressed{
+    font-family: cursive;
+}
+.meriweather{
+    font-family: serif;
+}
+
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 225, 0.54);
+    z-index: 99;
+}
+
+.cc-navbar .nav-link{
+    border-bottom:  2px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+.cc-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-teal);
+}
+
+.banner, .order-form{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../img/image.png') 
+        center center fixed no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+
+.banner .baner-desc{
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.cc-menu{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../img/untitled.png') 
+        center center fixed no-repeat;
+        background-size: cover;
+    height: 1280px
+}
+.order-form{
+    height: 500px;
+}
+
+.btn-order{
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:active{
+    color: #fff;
+    background-color: var(--bs-teal);
+}
+
